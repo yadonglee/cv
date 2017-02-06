@@ -1,0 +1,337 @@
+﻿/*
+ Author:Yadong Li
+ Author's Website:https://beldonlee.github.io/
+ Date:2016/12/10
+ */
+
+/*------------------------css reast and public css style--------------------------*/
+	* {
+		padding: 0;
+		margin:0;
+		list-style: none;
+		text-decoration: none;
+		font-family:"Microsoft YaHei",微软雅黑;
+	}
+    body,h1,h2,h3 {
+    	color:#000;
+		font-size:1em;
+    }
+    body{
+    	background: url("../img/body_bg.jpg");
+    	background-repeat: repeat-x!important;
+    }
+    a:hover {
+		color: #001d94!important;
+		background-repeat: no-repeat;
+    }
+    .nav_list a:hover {
+    	font-size: 15px;
+    	// display: block;
+    	width: 100%;
+    	background: url("../img/nav_bg.jpg") 8px 8px;
+    	background-repeat: no-repeat;
+    }
+    .nav_list_first a:hover {
+		background: url("../img/nav_first.png") 8px 8px;
+    	background-repeat: no-repeat;
+    }
+    .nav_list_last a:hover {
+		background: url("../img/nav_last.png") 8px 8px;
+		background-repeat: no-repeat;
+    }
+    .newslist a:hover {
+    	background: url("../img/news_bg.jpg");
+    	background-repeat: no-repeat!important;
+    }
+	.footer_news li a:hover {
+		background: url("../img/news_list_bg.jpg") 10px 0px;
+		background-repeat: no-repeat;
+	}
+	.method a:hover {
+		color: #fff!important;
+	}
+/* -------------------------header_normal_css-----------------------------------*/
+	.log_container {
+		width: 1000px;
+		height: 134px;
+		margin: 0 auto;
+		background: url("../img/header_bg.jpg");
+		background-repeat:repeat-x;
+	}
+	.search{
+		width: 244px;
+		height: 30px;
+		margin-top:55px;
+		margin-left: 721px;
+		border-radius: 5px;
+		outline:none;
+		border:none;
+		border: 1px solid #1964c3;
+		background: url("../img/search.jpg") 1px 1px;
+		background-repeat: no-repeat;
+	}
+
+/*----------------------------middle_normal_css-----------------------------*/
+/*----nav----*/
+	.blue_band {
+		width:1001px;
+		height: 45px;
+		margin: 0 auto;
+		background: #0b4398;
+	}
+	.nav li {
+		width:12%;
+		height: 45px;
+		float: left;
+		line-height:45px;
+		font-size: 15px;
+		text-align: center;
+	}
+	.nav li a {
+ 		color: #fff;
+ 		font-weight: bold;
+		text-indent: 14px;
+		display:block;
+	}
+/*----continer----*/
+	.continer {
+		width:999px;
+		height:318px;
+		margin:0 auto;
+		// padding:10px 10px;
+		border: 1px solid #bed8f3;
+
+	}
+ 	.newslist {
+ 		width:391px;
+ 		height:266px;
+ 		padding-left: 14px;
+ 		padding-top: 11px;
+ 		float: left;
+ 	}
+
+	.newslist_detail {
+		height: 47px;
+		font-size: 15px;
+		font-weight: normal;
+    	overflow: hidden;
+    	padding: 5px 3px;
+
+	}
+	.newslist li a {
+		height: 47px;
+		color: #000;
+		font-weight: normal;
+		overflow:hidden;
+		display:block;
+		padding: 14px 0;
+	}
+	.news_pic {
+		width:566px; /*不包含边框*/
+		height:296px;
+		float: right!important;
+		margin-top: 10px;
+		margin-right: 10px;
+		border-top: 2px solid #bedaf3;
+		border-right: 2px solid #bedaf3;
+		border-bottom: 2px solid #bedaf3;
+		border-left: 1px solid #bedaf3
+	}
+	.newslist_border {
+		border-bottom: 1px solid #bed8f3;
+	}
+
+/*-----------------------footer_normal_css------------------------*/
+	#footer{
+		width:999px;
+		height:355px;
+		margin: 0 auto;
+		margin-top: 29px;
+		margin-bottom: 28px;
+	}
+	.footer_left {
+		width:568px;
+		height:355px;
+		float: left;
+		overflow:hidden;
+		padding-bottom:10px;
+		border: 1px solid #c3daf9;
+	}
+	.more_news_nav{
+		width: 570px;
+		height: 47px;
+		margin: 0 auto;
+		background: url("../img/more_news_nav_bg.jpg");
+		background-repeat: no-repeat;
+	}
+	.more_news {
+		width:568px;
+		height: 301px;
+		float: left;
+		margin-left: 14px;
+	}
+	.footer_news{
+		width: 570px;
+		height: 47px;
+	}
+	.footer_news li {
+		list-style: none;
+		float:left;
+		width:20.5%;
+		font-weight: bold;
+		padding-top: 17px;
+		line-height:30px;
+	}
+	.footer_news li a {
+		display: block;
+	}
+	.more_news_details {
+
+	}
+	.footer_news_details a {
+		width:100%;
+		float: left;
+		font-size: 14px;
+		color: #0368ba;
+		text-decoration: none;
+		text-align:center;
+	}
+	.footer_news_details a:hover{
+		color:#0368ba;
+		background:#fff;
+	}
+	.more_news{
+		width: 570px;
+		height: 301px;
+		margin-left:14px;
+	}
+	.more_news li {
+		font-size: 14px;
+	}
+	.more_news_details {
+
+		list-style: none;
+	}
+	.more_news_details a {
+		color: #000;
+	}
+	.detail_news_first {
+				padding-top: 20px;
+	}
+	.detail_news {
+		padding-top: 14px;
+	}
+	.data {
+		margin-right: 30px;
+		float:right;
+	}
+
+/*----footer_right_css----*/
+	.footer_right {
+		width: 394px;
+		height:349px;
+		overflow:hidden;
+		float:right;
+		padding-bottom:20px; 
+	}
+	.footer_right .button img{
+		width:48%;
+		float:left;
+		height:35px;
+		margin-bottom:12px;
+	}
+	.footer_right .button{
+		height:auto;
+		overflow:hidden;
+	}
+	.footer_right_button {
+		width: 395px;
+		height: 127px;
+		float: left;
+		margin:0;
+		padding: 0;
+
+	}
+	.img_2,.img_4,.img_6{
+		margin-left: 10px;
+	}
+	.img_3,.img_4,.img_5,.img_6 {
+		margin-top: 5px;
+	}
+	.contect_details {
+		margin-top: 153px;
+		margin-bottom:11px;
+		padding-left:4px;
+		font-size: 16px;
+		font-weight: bold;
+		color:#4690cc
+	}
+	.border {
+		border: 1px solid #c3daf9;
+		*border: 1px solid #c3daf9; 
+	}
+	.contect_wrap {
+		width: 395px;
+		height: 40px;
+		background:  #d1e6fe;
+		
+	}
+	.contect ul {
+		width:395px;
+		height: 30px;
+		font-size: 16px;
+		padding-left: 10px;
+		padding-top: 5px;
+		float: left;
+		overflow: hidden;
+	}
+	.contect ul li {
+		font-size: 16px;
+		float: left;
+	}
+	.contect ul li a {
+		color: #5f90ca;
+	}
+	.method {
+		margin-left:19px;
+		margin-bottom:6px;
+		padding:5px 12px ;
+		color:#000;
+		font-weight: bold;
+		font-size: 15px!important;
+		background: url("../img/btn/none_active.png");
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.method a {
+		display:block;
+	}
+	.method:hover{
+		background: url("../img/btn/active.png");
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+	.footer_right_border {
+		margin-bottom: 11px;
+	}
+
+	.address {
+		font-size: 14px;
+		margin-top: 10px;
+		margin-left:13px;
+		display: inline-block;
+	}
+	.detail_address,.telephone,.email{
+		font-size: 14px;
+		margin-top: 12px;
+		margin-left:14px;
+		display:inline-block;
+		*display:inline-block;
+	}
+	.email a {
+		*display:inline-block;
+	}
+	.email a {
+		color: #0368ba;
+		font-size: 14px;
+	}
