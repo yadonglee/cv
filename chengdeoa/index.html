@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>承德市环境保护OA系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+/*Jquery change the div's style*/
+$(document).ready(function(){
+  //when you click this div,it will display
+  $(".file").click(function(){
+
+    if($(".file_list").css("display")=="none"){
+
+      $(".file_list").show();
+
+      }
+      else{
+
+        $(".file_list").hide();
+
+      }
+});
+
+$(".mouseover").click(function(){
+  $(".file_article").toggle();
+});
+
+$(".mouseover").click(function(){
+  $(".mouseover").css("list-style-image", "url(img/bottom.jpg)");
+})
+})
+</script>
+  </head>
+  <body>
+<!-- Header -->
+    <div id="head">
+      <img class="logo" src="img/logo.jpg" alt="" />
+      <div class="login">
+          <ul class="logo_details">
+            <li class="name">欢迎您，郭芙蓉   信息中心-科员</li>
+            <li class="logout"><a href="">注销</a></li>
+            <li class="phone"><a href="">即时通讯</a></li>
+            <li class="tie"><a href="">权限授予</a></li>
+            <li class="suit"><a href="">更改外观</a></li>
+          </ul>
+      </div>
+<!-- Middle -->
+<div id="main">
+  <div class="nav">
+    <ul class="nav_list">
+      <li class="first_style"><a href="">系统首页</a></li>
+      <li class="file"><a href="#">&nbsp</a></li>
+      <li class="admin"><a href="">行政审批</a></li>
+      <li class="work"><a href="">工作动态</a></li>
+      <li class="notice"><a href="">公告板</a></li>
+      <li class="allsearch"><a href="">综合查询</a></li>
+      <li class="check"><a href="">督察信息</a></li>
+      <li class="meeting"><a href="">会议管理</a></li>
+      <li class="more"><a href="">更多</a></li>
+    </ul>
+
+
+    </div>
+
+      <ul class="file_list" >
+         <li class="mouseover list_three" style="margin-left: 32px;"><a href="#">发文</a></li>
+         <ul class="file_article">
+           <li><a href="" >发文起草</a></li>
+           <li><a href="" >公文办理</a></li>
+           <li><a href="" >发文查询</a></li>
+         </ul>
+         <li class="list_second" style="margin-left: 32px;margin-top:20px;"><a href="">收文</a></li>
+         <li class="list_second" style="margin-left: 32px;margin-top:20px;"><a href="">签报</a></li>
+       </ul>
+
+
+  <!--  -->
+  <div id="news">
+    <div class="advanced_search">
+      <input class="input_text" type="text" name="name" onfocus="this.value=''" onblur="if(this.value==''){this.value='请输入文字'}" >
+      <a href="#"><img class="serach_img" src="img/advanced.jpg" alt="" /></a>
+    </div>
+    <table class="table">
+      <tr class="first_title" >
+				    <td style="text-align:center;color:#0062ad;" class="news_first" >标题</td>
+				    <td style="color:#0062ad;" class="news_first">发起人</td>
+				    <td style="padding-left:8%;color:#0062ad;" class="news_first">发起时间</td>
+
+			</tr>
+      <tr>
+				<td class="border "><img src="img/icon.jpg" alt="" /><a href="#">《承德日报》头版刊发:首届“唤醒蓝天”河北城...</a></td>
+				<td class="border ">张国英</td>
+				<td class="border " style="padding-left:7%;">2016-06-06</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icon.jpg" alt="" /><a href="#">双桥分局 6.5世界环境日走进校园</a></td>
+				<td class="content ">李双平</td>
+				<td class="content " style="padding-left:7%;">2016-06-06</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icon.jpg" alt="" /><a href="#">我局组织开展世界环境日主题宣传活动</a></td>
+				<td class="content ">王维和</td>
+				<td class="content " style="padding-left:7%;">2015-06-10</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">环境保护部发布2015年“环境日”主题</a></td>
+				<td class="content ">赵晓庆</td>
+				<td class="content " style="padding-left:7%;">2015-05-19</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">高新区分局开展“6.5”环境日宣传活动</a></td>
+				<td class="content ">中山明</td>
+				<td class="content " style="padding-left:7%;">2014-06-10</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">六五世界环境日专版文章《同呼吸共奋斗 为绿色..</a>.</td>
+				<td class="content ">钱国发</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">我局开展6.5世界环境日大型公益宣传活动</a></td>
+				<td class="content ">李明启</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">营子区环保分局开展6.5世界环境日宣传活动</a></td>
+				<td class="content ">白佳慧</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">双桥环保分局积极开展“六·五”世界环境日宣传活动</a></td>
+				<td class="content ">王元华</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">双桥分局 6.5世界环境日走进校园</a></td>
+				<td class="content ">程晓辉</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      <tr>
+				<td class="content "><img src="img/icongreen.jpg" alt="" /><a href="#">我局组织开展世界环境日主题宣传活动</a></td>
+				<td class="content ">王双起</td>
+				<td class="content " style="padding-left:7%;">2014-06-09</td>
+			</tr>
+      </table>
+
+  </div>
+
+
+    <a href="#"><img id="app" src="img/app.jpg" alt="" /></a>
+
+</div>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+/*
+Autor:Yadong Li
+Date:2017-01-19
+*/
+
+/*---------normal_css------------*/
+		*
+		{
+			padding: 0;
+			margin:0;
+			list-style: none;
+			outline:none;
+			text-decoration: none;
+			font-family:"Microsoft YaHei";
+		}
+	    body,h1,h2,h3
+	    {
+	    color:#000;
+			font-size:0.875em;
+	    }
+      body{
+    	background: url("../img/body.jpg");
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 1100px;
+		   /*background-position: center center;*/
+    }
+	    img
+      {
+	    	border:none;
+	    	padding: 0px;
+	    	margin:0px;
+	    }
+/*----------------mouseevent------------*/
+    a:link {
+		    color:#098;
+      }
+    a:visited {
+			 color: #fff;
+      }
+    a:hover {
+		    color:#065a94;
+      }
+    a:active {
+		    color:#cc00cc;
+      }
+
+/*---------Head_Normal_Style----------*/
+
+				#head {
+					width: 1000px;
+					height: 243px;
+					margin: 0 auto;
+					background: url('../img/head.jpg');
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					position: relative;
+				}
+				.wrap_ul {
+					height: 122px;
+					width: 100%;
+					padding-top: 120px;
+				}
+				.first {
+					height: 40px;
+					width: 100%;
+					border-bottom: 1px solid #b1ceea;
+				}
+				.first li {
+					float: left;
+				}
+				.first li a {
+					display: block;
+					margin-top: 5px;
+					margin-left: 7px;
+					padding:3.5px 6px;
+					color: #fff;
+
+				}
+				.first li a:hover {
+					color: #fff;
+					font-weight: bold;
+					background: #0c6bc4;
+				}
+				.second {
+					height: 40px;
+					width: 100%;
+					border-bottom: 1px solid #b1ceea;
+				}
+				.second li {
+					float: left;
+				}
+				.second li a {
+					display: block;
+					margin-top: 5px;
+					margin-left: 7px;
+					padding:3.5px 6px;
+					color: #fff;
+				}
+				.second li a:hover {
+					color: #fff;
+					font-weight: bold;
+					background: #0c6bc4;
+				}
+				.third {
+					height: 40px;
+					width: 100%;
+				}
+				.third li {
+					float: left;
+				}
+				.third li a {
+					display: block;
+					margin-top: 5px;
+					margin-left: 7px;
+					padding:3.5px 6px;
+					color: #fff;
+				}
+				.third li a:hover {
+					color: #fff;
+					font-weight: bold;
+					background: #0c6bc4;
+				}
+/*----------------The public ul style---------*/
+				.blue_bg:link {
+					background: #0c6bc4;
+					font-weight: bold;
+					color: #fff!important;
+				}
+				.wrap_ul ul  li a {
+					color: #000;
+					font-size: 16px;
+					font-family:"Microsoft YaHei";
+				}
+				hr {
+					border: 1px solid #0c6bc4;
+				}
+
+
+/*-----------Head_Normal_Style_Finished--------*/
+				#middle {
+					width: 1000px;
+					height: 787px;
+					margin: 0 auto;
+				}
+				.left {
+					width: 710px;
+					height: 787px;
+					float: left;
+				}
+				.left_top {
+					width: 710px;
+					height: 307px;
+					float: left;
+				}
+				.nav {
+					width: 220px;
+					height: 300px;
+					margin:7px 0px;
+					float: left;
+				}
+				.nav_details {
+					width: 220px;
+					height: 267px;
+					float: left;
+				}
+				.nav_details li {
+					display: block;
+					width: 220px;
+					padding: 10px 0;
+					background: url('../img/navmid.jpg');
+					background-repeat: no-repeat;
+				}
+				.nav_details li a {
+					display: block;
+					width: 220px;
+					color: #4884cc;
+					font-size: 14px;
+					font-weight: bold;
+					font-family:"Microsoft YaHei";
+					padding: 0px 61px;
+				}
+				.nav_details li:hover {
+					color: #4884cc;
+					background: url('../img/hover.jpg');
+					background-repeat: no-repeat;
+				}
+				.banner {
+					width: 480px;
+					height: 300px;
+					background: #786;
+					margin-top: 7px;
+					float: right;
+				}
+				.banner {}
+
+				.left_mid {
+					width: 710px;
+					height: 220px;
+					margin-top: 10px;
+					float: left;
+				}
+
+				.left_mid_nav {
+					width: 100%;
+					height: 40px;
+				}
+				.left_mid_nav ul {
+					width: 100%;
+					height: 40px;
+					background: #eaebeb;
+				}
+				.left_mid_nav ul li {
+					float: left;
+					display: block;
+
+
+				}
+				.left_mid_nav ul li a {
+					color: #828282;
+					display: block;
+					padding: 9px 29px;
+					font-weight: bold;
+					font-size: 16px;
+					font-family:"Microsoft YaHei";
+				}
+				.legal:link {
+					background: #657;
+				}
+				.left_mid_nav ul li a:hover {
+					color:#fff;
+					background: #0c6bc4;
+				}
+				.left_mid_pic {}
+				.left_mid_newsdetails {}
+
+				.left_mid_wrap {
+					width: 710px;
+					height: 10px;
+					margin: 10px 0px 0px 10px;
+					float: left;
+				}
+				.left_mid_pic {
+					width: 213px;
+					height: 160px;
+					float: left;
+				}
+				.left_mid_pic li {
+
+				}
+				.left_mid_pic li a {
+
+				}
+				.left_mid_pic li a img {}
+
+				.left_mid_news {
+					width: 470px;
+					height: 169px;
+					float: left;
+					overflow: hidden;
+					margin-left: 17px;
+				}
+				.left_mid_news li {
+					display: block;
+					width: 100%;
+				}
+				.left_mid_news li a {
+					float: left;
+					display: block;
+					width: 100%;
+					padding:10px;
+					color: #000;
+					border-bottom: 1px dashed #dbdbdb;
+
+				}
+				.left_mid_news li a:hover {
+					background: #0c6bc4;
+					color: #fff;
+				}
+				.left_mid_news li a:link {}
+
+				.left_bot {
+					width: 708px;
+					height: 220px;
+					float: left;
+					overflow: hidden;
+					border: 2px solid #b1ceea;
+				}
+				.left_bot ul {
+					width: 650px;
+					height: 37px;
+					margin-top: 12px;
+					margin-left: 28px;
+					margin-right: 28px;
+					border-bottom: 1px solid #b1ceea;
+				}
+				.left_bot_nav {
+					display: block;
+					padding-left: 28px!important;
+				}
+				.left_bot ul li {
+					float: left;
+				}
+				.left_bot ul li a {
+					display: block;
+					padding-top: 7px;
+					font-weight: bold;
+					font-size: 16px;
+					color: #828282;
+					font-family:"Microsoft YaHei";
+				}
+				.left_bot ul li a:hover {
+					color: #0c6bc4;
+				}
+				.left_bot table {
+					width: 652px;
+					height: 135px;
+					margin-left: 28px;
+					margin-right: 28px;
+					margin-top: 9px;
+					border: 1px solid #b1ceea;
+					border-collapse: collapse;
+				}
+				.left_bot table tr td {
+					text-align: center;
+					border: 1px solid #ccc;
+					font-size: 14px;
+					font-family:"Microsoft YaHei";
+				}
+				.table_bg {
+					height: 26px;
+					background: url('../img/table.jpg');
+					background-repeat: repeat-x;
+					background-size: auto;
+				}
+				.table_second {
+					background: #f2f9fd;
+				}
+/*----------------Middle_left_finished---------*/
+
+				.right {
+					width: 280px;
+					height: 787px;
+					float: right;
+					/*background: #444;*/
+				}
+				.right_top {
+					width: 280px;
+					height: 300px;
+					float: right;
+					margin-top: 7px;
+				}
+				.right_top ul {
+					width: 281pxl;
+					height: 268px;
+					border: 1px solid #b1ceea;
+
+				}
+				.right_top ul li {
+					display: block;
+					margin:15px 10px;
+					border-bottom: 1px dashed #b1ceea;
+				}
+				.right_top ul li a {
+					color: #000;
+				}
+				.right_top ul li a:hover {
+					color: #2c8ce3;
+				}
+				.right_top ul li a:link {}
+				.right_top_last {
+					border: none!important;
+				}
+				.right_top_last a {
+					color: #0c6bc4!important;
+					padding-left: 170px;
+				}
+				.right_top_last a:hover {
+					color: #000!important;
+				}
+				.rigt_bot {
+					width: 280px;
+					height: 137px;
+					float: left;
+				}
+				.rigt_bot ul {
+					display: block;
+					margin-top: 6px;
+				}
+				.right_mid {
+					width: 280px;
+					height: 200px;
+					float: right;
+					margin-top: 9px;
+				}
+				.right_bottom {
+					width: 280px;
+					height: 98px;
+					float: right;
+					margin-top: 12px;
+				}
+/*----------------------------------------------*/
+				#bottom {
+					height: 70px;
+					width: 100%;
+					background: #e9e9e9;
+					margin: 0 auto;
+				}
+				.copyright {
+					height: 20px;
+					width: 600px;
+					color: #acacac;
+					font-size: 14px;
+					font-weight: regular;
+					padding-top: 30px;
+					margin: 0 auto;
+					text-align: center;
+				}

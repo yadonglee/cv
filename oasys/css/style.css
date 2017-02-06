@@ -1,0 +1,365 @@
+/*
+ Author:Yadong Li
+ Author's Website:https://beldonlee.github.io/
+ Date:2016/12/16
+ */
+
+ /*----------------Public Style Css-----------------------*/
+  	* {
+		padding: 0;
+		margin:0;
+		list-style: none;
+		text-decoration: none;
+		font-family:"SimSun",宋体;
+	}
+    body,h1,h2,h3 {
+    	color:#000;
+		font-size:1em;
+    }
+    img {
+    	border:none;
+    	padding: 0px;
+    	margin:0px;
+    }
+	#header {
+		width: 100%;
+		
+		height: 80px;
+		float: left;
+
+	}
+	.header_bg {
+		width: 100%;
+		height: 80px;
+		background: url("../img/header_bg.jpg");
+		background-repeat: no-repeat;
+	}
+	.name_log {
+			font-size: 12px;
+			color: #fff;
+			padding-left:1075px;
+			padding-top: 60px;
+	}
+	#main {
+		width: 1360px;
+		height: 640px;
+		position: relative;
+		float: left;
+
+	}
+
+	.main_left {
+		width: 218px;
+		height: 638px;
+		float: left;
+		background: #d8e8ff;
+		border: 1px solid #fff;
+
+	}
+	.main_ul {
+		width: 200px;
+		height: 143px;
+		margin-left: 9px;
+		margin-top: 9px;
+		margin-right: 9px;
+	}
+	.home {
+		width: 200px;
+		height: 41px;
+		font-size: 12px;
+		font-family: "SimSun";
+		background: url("../img/button/left_title.jpg");
+		background-repeat: no-repeat;
+
+	}
+	.save {
+		width: 200px;
+		height: 34px;
+		font-size:12px;
+
+		display: block;
+		background: url("../img/button/title_middle.jpg");
+		background-repeat: no-repeat;
+
+	}
+	.save_wrap {
+		padding-left: 21px;
+		padding-top:10px;
+		font-style: 12px;
+		font-weight: bold;
+
+	}
+	.save_wrap li a {
+		color: #1877bb;
+	}
+	.wrap_all {
+		position: relative;
+	}
+	.wrap_list {
+		width: 170px;
+		height: 163px;
+		background: #d8e8ff;
+		opacity: 0.9;
+		position: absolute;
+		display: none;
+		margin-left: 8px;
+		margin-top: 23px;
+		border-radius: 0 5px 5px 5px;
+
+	}
+	.wrap_list_first {
+		color: #1877ba;
+		padding-left: 30px;
+		background: url("../img/button/list_style.png");
+		background-repeat: no-repeat;
+	}
+	.wrap_list_sanme {
+		color: #1877ba;
+		padding-left: 30px;
+		margin-top: 25px;
+		background: url("../img/button/list_style.png");
+		background-repeat: no-repeat;
+	}
+	.left_word {
+		line-height: 14px;
+	}
+	.img_button {
+		padding-right: 9px;float: right;
+	}	
+	.left_button {
+		padding-left: 80px;
+	}
+	.save a {
+		display: block;
+	}
+
+	//点击后统一样式
+	.save:hover {
+		background: url("../img/button/active_first.jpg");
+		background-repeat: no-repeat;
+	}
+	.post:hover {
+		background: url("../img/button/active_middle.jpg");
+		background-repeat: no-repeat;
+	}
+	.help:hover {
+		background: url("../img/button/active_last.jpg");
+		background-repeat: no-repeat;
+	}
+	.post {
+		width: 200px;
+		height: 34px;
+		font-size:12px;
+		font-family: "SimSun";
+		background: url("../img/button/title_middle.jpg");
+		background-repeat: no-repeat;
+	}
+	.help {
+		width: 200px;
+		height: 34px;
+		font-size:12px;
+		font-family: "SimSun";
+		background: url("../img/button/title_last.jpg");
+		background-repeat: no-repeat;
+	}
+
+
+
+	.main_right {
+		width: 1140px;
+		height: 640px;
+		float: right;
+		background: url("../img/wrap_right.jpg");
+		background-repeat: no-repeat;
+	}
+	.btn_list li {
+		float: left;
+	}
+
+	.btn1 {
+		padding-top: 81px;
+		padding-left: 20px;
+	}
+	.btn2,.btn3,.btn4,.btn5,.btn6,.btn7 {
+		padding-left: 10px;
+		padding-top: 81px;
+	}
+	.btn8 {
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	.btn9 {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+	/*-------------------------------------------------*/
+	.middle_right {
+		width: 1136px;
+		height: 201px;
+		margin-top: 200px;
+		margin-left: 17px;
+
+	}
+	.left_newslist {
+		width: 544px;
+		height: 201px;
+		float: left;
+	}
+	.more {
+		padding-left: 507px;
+	}
+	.left_first {
+		font-size: 14px;
+		padding-left: 15px;
+		padding-top: 16px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+	.left_first a {
+		color:#000; 
+		display: block;
+
+	}
+	.left_detail {
+		font-size: 14px;
+		padding-left: 15px;
+		// padding-top: 16px;
+	}
+	.left_detail a {
+		color: #000;
+	}
+
+    .second {
+		padding-top: 8px;
+		border-bottom: 1px dotted #e0e0e0;
+		padding-bottom: 5px;
+		background: #f8f8f8;
+    }
+	.second a{
+		color:#000; 
+		display: block;
+	}
+
+	.three {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+
+	.four {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		background: #f8f8f8;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+	.four a {
+		color:#000; 
+		display: block;
+	}
+	.five {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+
+	.data {
+		float: right;
+		padding-right: 15px;
+	}
+
+/*-------------------------------------*/
+
+	.right_newslist {
+		width: 540px;
+		height: 200px;
+		// margin-left: 200px;
+		float: left;
+		margin-left: 20px;
+	}
+	.right1 {
+			padding-left: 490px;
+	}
+	.right2 {
+		font-size: 14px;
+		padding-left: 15px;
+		padding-top: 17px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+	 .right2 a {
+		color:#000; 
+		display: block;
+
+	}
+	.right3,.right4,.right5,.right6{
+		font-size: 14px;
+		padding-left: 15px;
+	}
+	.right3 {
+		padding-top: 8px;
+		border-bottom: 1px dotted #e0e0e0;
+		padding-bottom: 5px;
+		background: #f8f8f8;
+    }
+    .right3 a{
+		color:#000; 
+		display: block;
+	}
+
+	.right4 {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+    .right4 a{
+		color:#000; 
+		display: block;
+	}
+	.right5 {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		background: #f8f8f8;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+	.right5 a {
+		color:#000; 
+		display: block;
+	}
+	.right6 {
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px dotted #e0e0e0;
+	}
+	.right6 a {
+		color:#000; 
+		display: block;
+	}
+
+	.data {
+		float: right;
+		padding-right: 15px;
+	}
+	.btn_list {
+		margin-top: px;
+	}
+	.button1{
+		padding-top:43px;
+		padding-left: 16px;
+	}
+	.button2 {padding-top: 43px;padding-left: 18px;}
+	.button3 {padding-top: 43px;padding-left: 18px;}
+	.button4 {padding-top: 43px;padding-left: 22px;}
+	.button5 {padding-top: 43px;padding-left: 22px;}
+	.button6 {padding-top: 43px;padding-left: 22px;}
+	.button7 {padding-top: 43px;padding-left: 22px;}
+	.button8 {padding-top: 43px;padding-left: 22px;}
+
+
+
+
+
+
+
+
+
+
