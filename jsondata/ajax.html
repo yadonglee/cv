@@ -1,0 +1,205 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>主页</title>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+a:link {
+		color:#ff0000;
+}
+a:visited {
+			color: #33ccff;
+}
+a:hover {
+		color:#00ff00;
+}
+a:active {
+		color:#cc00cc;
+}
+table {
+		border-collapse;
+}
+td {
+		text-align: center;
+		/* color: #33ccff; */
+		font-size: 12px;
+		border-top:1px solid #d9d7b2;
+		border-right:1px solid #d9d7b2;
+		height: 33px!important;
+}
+tr {
+		height: 33px;
+}
+#mytab {
+		width: 936px;
+		margin: 0 auto;
+		font-size: 14px;
+		font-family: 宋体；
+		word-break: keep-all;
+		vertical-align: middle;
+}
+.tab_th {
+		height:33px;
+		border-top: 1px solid #d9d7b2;
+}
+.public_first {
+		border-left: 1px solid #d9d7b2;
+}
+.public {
+		height: 33px;
+		background: #f3ecd4;
+		color: #b24910;
+		word-break: normal;
+		text-align: center;
+		word-break: keep-all;
+}
+	.public_all {
+		color: #b24910;
+	}
+.title {
+		width: 935px;
+		height: 42px;
+		margin: 0 auto;
+		margin-top: 33px;
+		text-align: center;
+		vertical-align: middle;
+		font-family:黑体;
+		font-size: 16px;
+		color: #333333;
+		border-collapse: collapse;
+		background-color: #F5F1DF;
+		border-top:1px solid #d9d7b2 ;
+		border-left:1px solid #d9d7b2 ;
+		border-right:1px solid #d9d7b2 ;
+}
+.title span {
+		display: block;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 13px;
+}
+.color {
+		border-left: 1px solid #d9d7b2;
+}
+.alink {
+			color: #33ccff;
+}
+
+
+	.colorli {
+		color: #000;
+	}
+color {
+	color: red;
+}
+ .css{
+	 color:red;
+ }
+ .blue{
+	 color:blue;
+ }
+.class_1 {
+	color: #000;
+}
+</style>
+<body>
+	<div class="title">
+		<span>全 国 主 要 流 域 重 点 断 面 2016 年 第 50 周 水 质 状 况 表</span>
+	</div>
+	<table id="mytab" cellspacing="0" cellpadding="0">
+		<tr class="tab_th" style="height:30px">
+				<td class="public public_first">序号</th>
+				<td class="public public_all">水系</td>
+				<td class="public public_all">点位名称</td>
+				<td class="public public_all">河流名称</td>
+				<td class="public public_all">断面状况</td>
+				<td class="public public_all">pH*</td>
+				<td class="public public_all">DO(mg/l)</td>
+				<td class="public public_all">CODMn(mg/l)</td>
+				<td class="public public_all">NH3-N(mg/l)</td>
+				<td class="public public_all">本周水质</td>
+				<td class="public public_all">上周水质</td>
+				<td class="public public_all">主要污染指标</td>
+		</tr>
+	</table>
+
+	<script>
+
+		getjson();
+
+		function getjson(){
+
+		var colors=new Array();
+		colors['Ⅰ']='#339900';
+		colors['Ⅱ']='#00CCCC;';
+		colors['Ⅲ']='#33CCFF';
+		colors['Ⅳ']='#878787';
+		colors['劣Ⅴ']='#FF6666';
+		colors['Ⅴ']='#123123';
+			var shtml='';
+		//申明一个动态的html/shtml
+			$.get("./data.json", { type: "json" },
+		 //从本地取得json数据
+	    	function(data){
+
+				for(var t=0;t<data.length;t++){
+						// alert(data)
+							// blue = {color:red;}+
+						if ( data[t].value = "Ⅰ") {
+					//		alert('right')
+						color='blue';
+						}else{
+								alert('a')
+
+							}
+
+				shtml+='<tr id="list"  style="color:'+colors[data[t].WaterQualityLast]+'">';
+				shtml+='<td class="color">'+(t+1)+'</td>';
+				shtml+='<td class="colorli">'+data[t].RiverSystem+'</td>';
+				shtml+='<td>'+'<a href="" class="alink">'+data[t].PointName+'</a>'+'</td>';
+				shtml+='<td>'+data[t].RiverName+'</td>';
+				shtml+='<td>'+data[t].SectionCondition+'</td>';
+				shtml+='<td>'+data[t].PH+'</td>';
+				shtml+='<td>'+data[t].DO+'</td>';
+				shtml+='<td>'+data[t].CODMn+'</td>';
+				shtml+='<td>'+data[t].NH3N+'</td>';
+				shtml+='<td>'+data[t].WaterQualityCurrent+'</td>';
+				shtml+='<td>'+data[t].WaterQualityLast+'</td>';
+				shtml+='<td>'+data[t].MainPollutionIndex+'</td>';
+				shtml+='</tr>';
+				}
+
+				$("table").append(shtml);
+
+	          },'json');
+
+
+
+
+			/*
+			"Year": 2016,
+	        "Week": 47,
+	        "RiverSystem": "松花江流域",
+	        "PointName": "吉林溪浪口",
+	        "RiverName": "松花江",
+	        "SectionCondition": "",
+	        "PH": 7.51,
+	        "DO": 7.51,
+	        "CODMn": 7.51,
+	        "NH3N": 7.51,
+	        "WaterQualityCurrent": "Ⅱ",
+	        "WaterQualityLast": "Ⅱ",
+	        "MainPollutionIndex": "--",
+	        "Longitude": 126.50731656,
+	        "Latitude": 44.30608579,
+	        "PublishTime": "2016/11/23 0:00:00"
+			*/
+
+		}
+	</script>
+</body>
+</html>
