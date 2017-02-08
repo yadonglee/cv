@@ -21,3 +21,10 @@
 * 点击地图坐标显示点详情
 * 地图显示坐标位置信息
 	* tips:因github无法在线预览地图部分，此部分打包压缩，[点击此处链接github拷贝压缩包](https://github.com/yadonglee/cv/tree/master/project2)
+
+>个人项目：
+
+
+* [古逸在线](https://yadonglee.github.io/cv/guys)
+* [个人简介](https://yadonglee.github.io/cv/mypage)
+* [个人博客](https://beldonlee.github.io/)
